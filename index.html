@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102c3b">
+  <meta name="description" content="Курс для менторов ИКТ: материалы для подготовки и проведения занятий, презентации и онлайн-практика. Новые занятия публикуются каждую неделю.">
+  <title>Курс для менторов ИКТ — материалы и практика</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Курс для менторов ИКТ — на главную">
+      <span class="brand-mark" aria-hidden="true">ИКТ</span>
+      <span class="brand-name">Менторы <strong>ИКТ</strong></span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#lessons">Занятия</a>
+      <a href="#about">О курсе</a>
+    </nav>
+    <a class="header-cta" href="#lessons">К материалам <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Учись · обучай · вдохновляй</p>
+        <h1 id="hero-title">Курс для<br>менторов <span>ИКТ.</span></h1>
+        <p class="hero-description">Готовься к занятиям и помогай ученикам осваивать цифровые навыки. Здесь собраны презентации, планы и практические задания. Новые занятия публикуются каждую неделю.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#lessons">Открыть материалы <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="#about">О курсе <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-icon" aria-hidden="true">↗</span>
+          <span>Материалы доступны онлайн — возвращайся к ним в любое время.</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-card art-card-back"><span class="art-card-label">ПУТЬ МЕНТОРА</span><span class="art-card-line"></span><span class="art-card-line short"></span></div>
+        <div class="art-window">
+          <div class="window-top"><span></span><span></span><span></span><i>ICT / COURSE</i></div>
+          <div class="window-content">
+            <div class="window-sidebar"><b></b><b></b><b></b><b></b></div>
+            <div class="window-main">
+              <span class="window-kicker">ПРАКТИКА</span>
+              <span class="window-title">Помогай учиться<br>через практику.</span>
+              <span class="window-progress"><i></i></span>
+              <span class="window-caption">ТВОЯ СЛЕДУЮЩАЯ ТЕМА</span>
+              <span class="window-lesson"><b>05</b><span>Сети и интернет</span><i>↗</i></span>
+            </div>
+          </div>
+        </div>
+        <div class="floating-badge"><span>6</span><small>занятий<br>доступно сейчас</small></div>
+        <div class="art-spark spark-one">✳</div>
+        <div class="art-spark spark-two">✳</div>
+      </div>
+      <div class="hero-bottom">
+        <span>КУРС ДЛЯ МЕНТОРОВ ИНФОРМАЦИОННО-КОММУНИКАЦИОННЫХ ТЕХНОЛОГИЙ</span>
+        <span>НОВЫЕ МАТЕРИАЛЫ КАЖДУЮ НЕДЕЛЮ <i></i> ОНЛАЙН</span>
+      </div>
+    </section>
+
+    <section class="resources-section" id="lessons" aria-labelledby="lessons-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow section-eyebrow">БИБЛИОТЕКА МЕНТОРА</p>
+          <h2 id="lessons-title">Материалы курса<span class="heading-period">.</span></h2>
+          <p class="section-description">Материалы для подготовки и проведения занятий. Сейчас доступно 6 тем, новые публикуются каждую неделю.</p>
+        </div>
+        <div class="lesson-count"><span>6</span><small>занятий доступно<br>новые каждую неделю</small></div>
+      </div>
+
+      <div class="library-toolbar">
+        <label class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+          <span class="visually-hidden">Поиск по занятиям</span>
+          <input id="lesson-search" type="search" placeholder="Найти занятие..." autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <div class="filters" role="group" aria-label="Фильтр по типу материала">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Все материалы</button>
+          <button class="filter-button" type="button" data-filter="presentation" aria-pressed="false">Презентации</button>
+          <button class="filter-button" type="button" data-filter="preparation" aria-pressed="false">Подготовка</button>
+          <button class="filter-button" type="button" data-filter="practice" aria-pressed="false">Практика</button>
+        </div>
+      </div>
+
+      <p class="results-status" id="results-status" aria-live="polite"></p>
+      <div class="lesson-grid" id="lesson-grid">
+        <article class="lesson-card" data-lesson data-title="преподаватели икт преподавание">
+          <div class="card-top"><span class="lesson-number">ЗАНЯТИЕ 01</span><span class="topic-icon icon-violet" aria-hidden="true">✳</span></div>
+          <h3>Преподавание ИКТ</h3>
+          <p class="card-description">Знакомство с курсом и основами преподавания информационных технологий.</p>
+          <div class="card-tags"><span>Основы</span><span>Преподавание</span></div>
+          <div class="card-links">
+            <a class="resource-link" data-type="presentation" href="resources/Занятие_01_преподаватели_ИКТ.pdf" download><span class="resource-icon">↓</span><span>Презентация<small>PDF · скачать</small></span><span class="link-arrow">↗</span></a>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-lesson data-title="локальные ресурсы икт">
+          <div class="card-top"><span class="lesson-number">ЗАНЯТИЕ 02</span><span class="topic-icon icon-green" aria-hidden="true">⌘</span></div>
+          <h3>Локальные ресурсы ИКТ</h3>
+          <p class="card-description">Устройства, программы и цифровые ресурсы, которые помогают учиться и работать.</p>
+          <div class="card-tags"><span>Ресурсы</span><span>Устройства</span></div>
+          <div class="card-links">
+            <a class="resource-link" data-type="presentation" href="resources/Занятие_02_Локальные_ресурсы_ИКТ.pdf" download><span class="resource-icon">↓</span><span>Презентация<small>PDF · скачать</small></span><span class="link-arrow">↗</span></a>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-lesson data-title="компьютер практический урок">
+          <div class="card-top"><span class="lesson-number">ЗАНЯТИЕ 03</span><span class="topic-icon icon-orange" aria-hidden="true">▤</span></div>
+          <h3>Компьютер на практике</h3>
+          <p class="card-description">Изучаем устройство компьютера и применяем знания в практических заданиях.</p>
+          <div class="card-tags"><span>Компьютер</span><span>Практика</span></div>
+          <div class="card-links">
+            <a class="resource-link" data-type="presentation" href="resources/Занятие_03_Компьютер_практический_урок.pdf" download><span class="resource-icon">↓</span><span>Презентация<small>PDF · скачать</small></span><span class="link-arrow">↗</span></a>
+            <a class="resource-link" data-type="preparation" href="preparations/Подготовка_к_занятию_03.html"><span class="resource-icon">↗</span><span>Подготовка<small>План занятия</small></span><span class="link-arrow">↗</span></a>
+            <a class="resource-link resource-link-practice" data-type="practice" href="practices/Практика_занятие_03.html"><span class="resource-icon">▶</span><span>Онлайн-практика<small>Задания в браузере</small></span><span class="link-arrow">↗</span></a>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-lesson data-title="операционная система ос файлы">
+          <div class="card-top"><span class="lesson-number">ЗАНЯТИЕ 04</span><span class="topic-icon icon-blue" aria-hidden="true">▧</span></div>
+          <h3>Операционная система</h3>
+          <p class="card-description">Работаем с файлами, папками, программами и настройками системы.</p>
+          <div class="card-tags"><span>ОС</span><span>Файлы</span></div>
+          <div class="card-links">
+            <a class="resource-link" data-type="presentation" href="resources/Занятие_04_Операционная_система.pdf" download><span class="resource-icon">↓</span><span>Презентация<small>PDF · скачать</small></span><span class="link-arrow">↗</span></a>
+            <a class="resource-link" data-type="preparation" href="preparations/Подготовка_к_занятию_04.html"><span class="resource-icon">↗</span><span>Подготовка<small>План занятия</small></span><span class="link-arrow">↗</span></a>
+            <a class="resource-link resource-link-practice" data-type="practice" href="practices/Практика_занятие_04.html"><span class="resource-icon">▶</span><span>Онлайн-практика<small>Задания в браузере</small></span><span class="link-arrow">↗</span></a>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-lesson data-title="сети интернет сеть">
+          <div class="card-top"><span class="lesson-number">ЗАНЯТИЕ 05</span><span class="topic-icon icon-pink" aria-hidden="true">⌁</span></div>
+          <h3>Сети и интернет</h3>
+          <p class="card-description">Разбираемся, как работает интернет, сайты, сети и поиск информации.</p>
+          <div class="card-tags"><span>Интернет</span><span>Сети</span></div>
+          <div class="card-links">
+            <a class="resource-link" data-type="presentation" href="resources/Занятие_05_Сети_и_интернет.pdf" download><span class="resource-icon">↓</span><span>Презентация<small>PDF · скачать</small></span><span class="link-arrow">↗</span></a>
+            <a class="resource-link" data-type="preparation" href="preparations/Подготовка_к_занятию_05.html"><span class="resource-icon">↗</span><span>Подготовка<small>План занятия</small></span><span class="link-arrow">↗</span></a>
+            <a class="resource-link resource-link-practice" data-type="practice" href="practices/Практика_занятие_05.html"><span class="resource-icon">▶</span><span>Онлайн-практика<small>Задания в браузере</small></span><span class="link-arrow">↗</span></a>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-lesson data-title="терминал командная строка">
+          <div class="card-top"><span class="lesson-number">ЗАНЯТИЕ 06</span><span class="topic-icon icon-yellow" aria-hidden="true">⌘</span></div>
+          <h3>Знакомство с терминалом</h3>
+          <p class="card-description">Делаем первые шаги в командной строке и учимся управлять файлами.</p>
+          <div class="card-tags"><span>Терминал</span><span>Команды</span></div>
+          <div class="card-links">
+            <a class="resource-link" data-type="presentation" href="resources/Занятие_06_Терминал.pdf" download><span class="resource-icon">↓</span><span>Презентация<small>PDF · скачать</small></span><span class="link-arrow">↗</span></a>
+            <a class="resource-link" data-type="preparation" href="preparations/Подготовка_к_занятию_06.html"><span class="resource-icon">↗</span><span>Подготовка<small>План занятия</small></span><span class="link-arrow">↗</span></a>
+            <a class="resource-link resource-link-practice" data-type="practice" href="practices/Практика_занятие_06.html"><span class="resource-icon">▶</span><span>Онлайн-практика<small>Задания в браузере</small></span><span class="link-arrow">↗</span></a>
+          </div>
+        </article>
+      </div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span aria-hidden="true">⌕</span>
+        <p>По вашему запросу ничего не найдено.</p>
+        <button type="button" id="clear-search">Сбросить поиск</button>
+      </div>
+      <p class="offline-note"><span aria-hidden="true">ⓘ</span> Для просмотра и скачивания файлов нужен интернет. Интерактивные задания открываются в браузере.</p>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-index">01 <span>/ 02</span></div>
+      <div class="about-content">
+        <p class="eyebrow">КАК УСТРОЕН КУРС</p>
+        <h2 id="about-title">Помогай ученикам осваивать ИКТ<br><span>на практике.</span></h2>
+        <p>Это курс для менторов ИКТ: изучай темы, готовься к занятиям и используй практические задания вместе с учениками. Сейчас доступны 6 тем, новые материалы появляются каждую неделю.</p>
+      </div>
+      <div class="about-steps">
+        <div><span class="step-number">01</span><span><strong>Изучи тему</strong><small>Открой презентацию занятия</small></span><i aria-hidden="true">↗</i></div>
+        <div><span class="step-number">02</span><span><strong>Подготовь занятие</strong><small>Посмотри план и материалы</small></span><i aria-hidden="true">↗</i></div>
+        <div><span class="step-number">03</span><span><strong>Проведи практику</strong><small>Попробуй задания вместе с учениками</small></span><i aria-hidden="true">↗</i></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">ИКТ</span><span class="brand-name">Менторы <strong>ИКТ</strong></span></a>
+    <p>Поддерживай учеников на пути к цифровым навыкам.</p>
+    <a href="#home" class="back-top">Наверх ↑</a>
+  </footer>
+</body>
+</html>
