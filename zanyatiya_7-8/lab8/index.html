@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лаборатория занятия 8</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; }
+    button { font-size: 16px; padding: 8px 16px; margin-top: 10px; }
+    pre { background: #f4f4f4; padding: 12px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Запрос к данным</h1>
+  <p>Страница запрашивает файл data.json через сеть. Откройте F12, вкладка «Сеть», и обновите страницу.</p>
+  <button id="load">Загрузить данные</button>
+  <pre id="out">Данные ещё не загружены.</pre>
+  <script>
+    document.getElementById("load").addEventListener("click", async () => {
+      const res = await fetch("data.json");
+      const data = await res.json();
+      document.getElementById("out").textContent =
+        "Статус: " + res.status + "\n" + JSON.stringify(data, null, 2);
+    });
+  </script>
+</body>
+</html>
