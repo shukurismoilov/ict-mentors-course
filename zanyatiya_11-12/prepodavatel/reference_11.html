@@ -1,0 +1,45 @@
+<!-- Эталон для преподавателя. Не раздавать участникам. -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Безопасность паролей</title>
+</head>
+<body>
+  <header>
+    <h1>Безопасность паролей</h1>
+  </header>
+  <main>
+    <p>Пароль должен быть длинным и уникальным для каждого сайта.</p>
+    <img src="images/lock.svg" alt="Значок замка">
+    <table>
+      <caption>Способы защиты</caption>
+      <thead>
+        <tr><th>Способ защиты</th><th>Надёжность</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Уникальный пароль на каждый сайт</td><td>Высокая</td></tr>
+        <tr><td>Менеджер паролей</td><td>Высокая</td></tr>
+        <tr><td>Двухфакторная аутентификация</td><td>Очень высокая</td></tr>
+      </tbody>
+    </table>
+    <h2>Обратная связь</h2>
+    <form>
+      <label>Имя <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Тема
+        <select name="topic">
+          <option>Вопрос</option>
+          <option>Ошибка</option>
+          <option>Предложение</option>
+        </select>
+      </label>
+      <label>Сообщение <textarea name="message" required></textarea></label>
+      <button type="submit">Отправить</button>
+    </form>
+  </main>
+  <footer>
+    <p>Источник: учебный материал</p>
+  </footer>
+</body>
+</html>

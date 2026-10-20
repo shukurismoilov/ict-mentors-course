@@ -1,0 +1,29 @@
+<!-- Эталон для преподавателя. Не раздавать участникам. -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Проверка ответа</title>
+</head>
+<body>
+  <h1>Вопрос: сколько будет 6 × 7?</h1>
+  <input type="text" id="answer" placeholder="Ваш ответ">
+  <button id="check">Проверить</button>
+  <p id="message"></p>
+  <script>
+    const input = document.getElementById("answer");
+    const message = document.getElementById("message");
+
+    document.getElementById("check").addEventListener("click", () => {
+      const value = input.value.trim();
+      if (value === "") {
+        message.textContent = "Введите ответ";
+      } else if (Number(value) === 42) {
+        message.textContent = "Верно!";
+      } else {
+        message.textContent = "Неверно, попробуйте ещё раз";
+      }
+    });
+  </script>
+</body>
+</html>

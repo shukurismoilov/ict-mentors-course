@@ -1,0 +1,53 @@
+/* Эталон для преподавателя. Не раздавать участникам. */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  color: #222;
+}
+h1 {
+  color: #1f3a5f;
+  margin-bottom: 16px;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #ccd6e3;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background: #e8eef6;
+}
+button {
+  background: #1f3a5f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+form label {
+  display: block;
+  margin-bottom: 12px;
+}
+input, select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 4px;
+}
+@media (max-width: 600px) {
+  main {
+    padding: 8px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
