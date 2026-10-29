@@ -167,6 +167,15 @@ async function loadMarkdown() {
     throw new Error("Можно открыть только Markdown-файл с этого сайта.");
   }
 
+  if (window.location.protocol === "file:") {
+    content.innerHTML = [
+      '<p class="markdown-error">Браузер блокирует загрузку Markdown-файлов, когда сайт открыт напрямую с диска (file://).</p>',
+      `<p><a href="${escapeHtml(sourceUrl.href)}">Открыть файл как обычный текст</a></p>`,
+      "<p>Чтобы просматривать материалы в оформленном виде, запустите в папке проекта команду <code>python -m http.server 8000</code> и откройте <a href=\"http://localhost:8000/\">http://localhost:8000/</a>.</p>",
+    ].join("");
+    return;
+  }
+
   const response = await fetch(sourceUrl);
   if (!response.ok) {
     throw new Error(`Не удалось загрузить файл (HTTP ${response.status}).`);
